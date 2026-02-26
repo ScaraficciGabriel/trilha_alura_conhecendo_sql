@@ -16,7 +16,7 @@ Essa pasta contém os códigos em linguagem SQL utilizados durante a resolução
 
 # Contextualização dos códigos contidos dentro dos arquivos da pasta "conhecendo_sql":
 
-## mnm_a1 + tabela+clientes+desafio+aula+1 + tabela+produtos+desafio+aula+1 + tabela+vendas+desafio+aula+1| mão na massa - aula 1
+## mnm_a1 + tabela+clientes+desafio+aula+1 + tabela+produtos+desafio+aula+1 + tabela+vendas+desafio+aula+1 | mão na massa - aula 1
 
 **Exercício:**  
 

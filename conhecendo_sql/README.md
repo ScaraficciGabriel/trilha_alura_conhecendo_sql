@@ -2,10 +2,14 @@ Essa pasta contém os códigos em linguagem SQL utilizados durante a resolução
 
 # Aprendizado de cada aula do curso:
 
-**- Aula 01:** SELECT, DISTINCT, WHERE 
+**- Aula 01:** SELECT, DISTINCT, WHERE
+
 **- Aula 02:** CREATE TABLE, ALTER TABLE, DROP TABLE, PRIMARY KEY, FOREIGN KEY
+
 **- Aula 03:** INSERT
+
 **- Aula 04:** Filtros (>,<,=,<>), Filtros Compostos (AND, OR, NOT BETWEEN), ORDER BY, ALIAS
+
 **- Aula 05:** UPDATE, DELETE
 
 # Contextualização dos códigos contidos dentro dos arquivos da pasta "conhecendo_sql":

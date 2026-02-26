@@ -1,20 +1,22 @@
 Essa pasta contém os códigos em linguagem SQL utilizados durante a resolução do exercícios práticos ("mão na massa") durante as aulas do curso SQLite Online: conhecendo instruções SQL, na trilha Conhecendo SQL, da plataforma ALura.
 
+
 # Aprendizado de cada aula do curso:
 
-**- Aula 01:** SELECT, DISTINCT, WHERE
+**Aula 01:** SELECT, DISTINCT, WHERE
 
-**- Aula 02:** CREATE TABLE, ALTER TABLE, DROP TABLE, PRIMARY KEY, FOREIGN KEY
+**Aula 02:** CREATE TABLE, ALTER TABLE, DROP TABLE, PRIMARY KEY, FOREIGN KEY
 
-**- Aula 03:** INSERT
+**Aula 03:** INSERT
 
-**- Aula 04:** Filtros (>,<,=,<>), Filtros Compostos (AND, OR, NOT BETWEEN), ORDER BY, ALIAS
+**Aula 04:** Filtros (>,<,=,<>), Filtros Compostos (AND, OR, NOT BETWEEN), ORDER BY, ALIAS
 
-**- Aula 05:** UPDATE, DELETE
+**Aula 05:** UPDATE, DELETE
+
 
 # Contextualização dos códigos contidos dentro dos arquivos da pasta "conhecendo_sql":
 
-## - mnm_a1 + tabela+clientes+desafio+aula+1 + tabela+produtos+desafio+aula+1 + tabela+vendas+desafio+aula+1| mão na massa - aula 1
+## mnm_a1 + tabela+clientes+desafio+aula+1 + tabela+produtos+desafio+aula+1 + tabela+vendas+desafio+aula+1| mão na massa - aula 1
 
 **Exercício:**  
 
@@ -25,7 +27,8 @@ Liste todos os IDs únicos dos produtos vendidos pela empresa, ou seja, uma list
 Identifique os clientes que se cadastraram na empresa antes de 2020. Liste o nome e a data de cadastro desses clientes. Utilize a cláusula WHERE para filtrar os registros.
 
 
-## - mnm_a3 | mão na massa - aula 3
+
+## mnm_a3 | mão na massa - aula 3
 
 **Exercício:** 
 
@@ -50,7 +53,8 @@ Data de Contratação: 2023-10-24
 Salário: 6000.00 
 
 
-## - mnm_a5_1 | mão na massa 1 - aula 5
+
+## mnm_a5_1 | mão na massa 1 - aula 5
 
 **Exercício:** 
 
@@ -85,7 +89,8 @@ ID: 10, Nome: Danilo Souza, Departamento: TI, Salário: 8242.14
 10) Remova a tabela funcionarios do banco de dados.
 
 
-- mnm_a5_2 | mão na massa 2 - aula 5
+
+## mnm_a5_2 | mão na massa 2 - aula 5
 
 **Exercício:** 
 

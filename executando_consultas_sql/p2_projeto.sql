@@ -1,4 +1,4 @@
-AULA 01
+#AULA 01
 
 #1. Você é uma pessoa contratada pela empresa de RH Fokus para gerenciar o banco de dados da empresa. Ela precisa consultar algumas informações específicas que auxiliarão tanto as empresas contratantes de pessoas colaboradoras, quanto as pessoas cadastradas como pessoas colaboradoras que desejam conseguir uma oportunidade de trabalho e progredir em suas carreiras.
 Então, como podemos trazer uma das primeiras informações solicitadas pela Fokus: identificar as cinco pessoas colaboradoras que possuem as maiores remunerações? A Fokus quer usar essas informações para promover um treinamento para todas as outras pessoas colaboradoras cadastradas. A ideia é convidar essas cinco pessoas com as maiores remunerações para compartilhar um pouco sobre suas trajetórias de carreira e incentivar as outras pessoas que também estão em busca de uma oportunidade.
@@ -135,7 +135,7 @@ SELECT (' O faturamento bruto médio foi ' || CAST(ROUND (AVG(faturamento_bruto)
 FROM faturamento;
 
 
-#AULA 05:
+#AULA 05
 
 #23. Agora, a Fokus tem uma nova demanda: ela quer separar as pessoas colaboradoras pela faixa salarial, para ter uma noção de qual é a média de ganho de cada profissão, de cada cargo. As empresas também se interessam em saber quanto cada cargo deseja receber, a faixa salarial em que cada cargo se enquadra.
 
@@ -151,3 +151,4 @@ FROM HistoricoEmprego;
 Portanto, ela gostaria de alterar o nome para CargosColaboradores, pois contém informações sobre cargos e salários, e ela acha que isso se encaixa melhor. Para isso, vamos usar a cláusula rename, que serve para renomear uma tabela, uma coluna específica, ou algo que gostaríamos de mudar o nome no nosso banco de dados.
 
 ALTER TABLE HistoricoEmprego RENAME TO CargosColaboradores; 
+

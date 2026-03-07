@@ -17,155 +17,59 @@ Essa pasta contém os códigos em linguagem SQL utilizados durante a resolução
 # Contextualização dos códigos contidos dentro dos arquivos da pasta "conhecendo_sql":
 
 ## mnm_a1 + tabela+clientes+desafio+aula+1 + tabela+produtos+desafio+aula+1 + tabela+vendas+desafio+aula+1 | mão na massa - aula 1
-
-**Exercício:**  
-
-Você é uma pessoa analista de dados em uma empresa de comércio eletrônico e foi escolhido dentro da equipe para analisar o banco de dados de vendas da empresa. Você precisa extrair informações específicas sobre os clientes e os produtos vendidos.
-
-Liste todos os IDs únicos dos produtos vendidos pela empresa, ou seja, uma lista de produtos distintos. Utilize a cláusula DISTINCT para garantir que os IDs dos produtos sejam únicos.
-
-Identifique os clientes que se cadastraram na empresa antes de 2020. Liste o nome e a data de cadastro desses clientes. Utilize a cláusula WHERE para filtrar os registros.
-
-
+ 
+Exercício onde você é uma pessoa analista de dados em uma empresa de comércio eletrônico e foi escolhido dentro da equipe para analisar o banco de dados de vendas da empresa. Você precisa extrair informações específicas sobre os clientes e os produtos vendidos.
 
 ## mnm_a3 | mão na massa - aula 3
 
-**Exercício:** 
-
-Você trabalha como um administrador de banco de dados em uma empresa de recursos humanos. A empresa precisa armazenar informações sobre novos funcionários em seu banco de dados. Sua tarefa é criar uma instrução SQL INSERT para inserir os detalhes de um novo funcionário em uma tabela de funcionários.
-
-A tabela de funcionários possui os seguintes campos:
-
-ID (Chave Primária)
-Nome (Texto)
-Cargo (Texto)
-Departamento (Texto)
-Data de Contratação (Data)
-Salário (Decimal)
-
-Escreva uma instrução SQL INSERT para adicionar um novo funcionário à tabela. Use os seguintes dados de exemplo:
-
-ID: 32D
-Nome: João Silva
-Cargo: Desenvolvedor de Software
-Departamento: TI
-Data de Contratação: 2023-10-24
-Salário: 6000.00 
-
-
+Exercício onde você trabalha como um administrador de banco de dados em uma empresa de recursos humanos. A empresa precisa armazenar informações sobre novos funcionários em seu banco de dados. Sua tarefa é criar uma instrução SQL INSERT para inserir os detalhes de um novo funcionário em uma tabela de funcionários.
 
 ## mnm_a5_1 | mão na massa 1 - aula 5
 
-**Exercício:** 
-
-1) Crie uma tabela chamada funcionarios com as seguintes colunas: id (int, chave primária), nome (varchar(100)), departamento (varchar(100)) e salario (float). Em seguida, insira os seguintes registros de funcionários na tabela:
-
-ID: 1, Nome: Heitor Vieira, Departamento: Financeiro, Salário: 4959.22
-ID: 2, Nome: Daniel Campos, Departamento: Vendas, Salário: 3884.44
-ID: 3, Nome: Luiza Dias, Departamento: TI, Salário: 8205.78
-ID: 4, Nome: Davi Lucas Moraes, Departamento: Financeiro, Salário: 8437.02
-ID: 5, Nome: Pietro Cavalcanti, Departamento: TI, Salário: 4946.88
-ID: 6, Nome: Evelyn da Mata, Departamento: Vendas, Salário: 5278.88
-ID: 7, Nome: Isabella Rocha, Departamento: Marketing, Salário: 4006.03
-ID: 8, Nome: Sra. Manuela Azevedo, Departamento: Vendas, Salário: 6101.88
-ID: 9, Nome: Brenda Cardoso, Departamento: TI, Salário: 8853.34
-ID: 10, Nome: Danilo Souza, Departamento: TI, Salário: 8242.14
-2) Selecione todos os campos de todos os registros na tabela funcionarios.
-
-3) Na tabela funcionarios, selecione os nomes dos funcionários que trabalham no departamento de "Vendas".
-
-4) Selecione os funcionários da tabela funcionarios cujo salário seja maior que 5000.
-
-5) Na tabela funcionarios, selecione todos os departamentos distintos.
-
-6) Atualize o salário dos funcionários do departamento de "TI" para 7500 na tabela funcionarios.
-
-7) Delete da tabela funcionarios todos os registros de funcionários que ganham menos de 4000.
-
-8) Selecione os nomes e salários dos funcionários que trabalham no departamento de "Vendas" e cujo salário seja maior ou igual a 6000.
-
-9) Crie uma tabela chamada projetos com as colunas: id_projeto (int, chave primária), nome_projeto (varchar(100)), id_gerente (int, referência a id na tabela funcionarios). Insira 3 registros na tabela projetos e, em seguida, selecione todos os projetos cujo id_gerente seja igual a 2.
-
-10) Remova a tabela funcionarios do banco de dados.
-
-
+Algumas atividades que auxiliares para praticar e fixar ainda mais cada conteúdo do curso.
 
 ## mnm_a5_2 + arquivo-desafio | mão na massa 2 - aula 5
 
-**Exercício:** 
+Exercício onde você seja o responsável por criar e gerenciar um banco de dados para uma escola. Esse banco de dados ajudará a organizar informações importantes sobre alunos, professores, disciplinas, turmas e notas. O desafio consiste em dar os primeiros passos para configurar e usar esse banco de dados.
 
-**Contexto**
+# Resolução
 
-Imagine que você seja o responsável por criar e gerenciar um banco de dados para uma escola. Esse banco de dados ajudará a organizar informações importantes sobre alunos, professores, disciplinas, turmas e notas.
+##  mnm_a1 + tabela+clientes+desafio+aula+1 + tabela+produtos+desafio+aula+1 + tabela+vendas+desafio+aula+1 | mão na massa - aula 1
 
-**Desafio**
+**- Problema:** Havia a necessidade de extrair informações básicas de tabelas de vendas e clientes, especificamente identificando produtos únicos e filtrando clientes com base em datas antigas.
 
-Sua missão é dar os primeiros passos para configurar e usar esse banco de dados.
+**- Hipótese testada:** O uso da instrução SELECT DISTINCT e de cláusulas de filtro WHERE com operadores de comparação de data seria suficiente para isolar esses dados específicos.
 
-**1 - Criar tabelas**
+**- Descoberta:** Foi possível listar todos os IDs de produtos sem repetição a partir da tabela de vendas, além de conseguir filtrar os nomes dos clientes que foram cadastrados antes de janeiro de 2020.
 
-O primeiro passo é definir a estrutura do banco de dados, criando tabelas para armazenar informações específicas. Utilizaremos SQL (Structured Query Language) para criar as tabelas. Aqui estão os dados que você pode utilizar:
+**- Decisão a ser tomada:** Permitir que a área de negócios entenda o portfólio real e único de produtos vendidos, além de identificar a base de clientes mais antiga para possíveis ações ou campanhas de fidelização.
 
-Tabela "Alunos" armazenará informações sobre os estudantes, como:
+## mnm_a3 | mão na massa - aula 3
 
-ID do Aluno: Um identificador único para cada aluno.
-Nome do Aluno: O nome completo do aluno.
-Data de Nascimento: A data de nascimento do aluno.
-Gênero: O gênero do aluno (masculino, feminino, outros).
-Endereço: O endereço do aluno.
-Telefone de Contato: O número de telefone de contato do aluno.
-E-mail: O endereço de e-mail do aluno.
-Tabela "Professores" conterá detalhes sobre os professores da escola:
+**- Problema:** Era preciso estruturar o armazenamento inicial de dados de funcionários, saindo apenas da consulta para a criação física da estrutura do banco de dados.
 
-ID do Professor: Um identificador único para cada professor.
-Nome do Professor: O nome completo do professor.
-Data de Nascimento: A data de nascimento do professor.
-Gênero: O gênero do professor.
-Telefone de Contato: O número de telefone de contato do professor.
-E-mail: O endereço de e-mail do professor.
-Tabela "Disciplinas" manterá registros das matérias oferecidas, incluindo:
+**- Hipótese testada:** A instrução CREATE TABLE combinada com a definição de tipos de dados adequados (como INT, VARCHAR, DATE e FLOAT) e a inserção de registros via INSERT INTO criaria uma base sólida para esses cadastros.
 
-ID da Disciplina: Um identificador único para cada disciplina.
-Nome da Disciplina: O nome da disciplina.
-Descrição: Uma descrição da disciplina.
-Carga Horária: A carga horária da disciplina.
-ID do Professor: Uma chave estrangeira que faz referência ao professor que leciona a disciplina.
-Tabela "Turmas" será usada para registrar turmas específicas:
+**- Descoberta:** Aprendeu-se a estruturar uma tabela definindo uma chave primária (PRIMARY KEY) e a popular essa tabela imediatamente com os dados completos de um funcionário de TI.
 
-ID da Turma: Um identificador único para cada turma.
-Nome da Turma: O nome ou código da turma.
-Ano Letivo: O ano letivo da turma.
-ID do Professor Orientador: Uma chave estrangeira que faz referência ao professor que orienta a turma.
-Tabela "Turma_Disciplinas" armazenara os dados das associações entre turmas e disciplinas:
+**- Decisão a ser tomada:** Ajudar a equipe de TI e o RH a padronizarem o cadastro de novos funcionários, garantindo que informações vitais como cargo, departamento e data de contratação sejam armazenadas no formato correto.
 
-ID da Turma: Uma lista de chaves estrangeiras que fazem referência as turmas existentes.
-ID das Disciplinas: Uma lista de chaves estrangeiras que fazem referência às disciplinas ministradas na turma.
-OBS.: Os dois campos juntos formam a chave primaria da tabela
+## mnm_a5_1 | mão na massa 1 - aula 5
 
-Tabela "Turma_Alunos" será usada para registrar os dados das associações entre turmas e alunos:
+**- Problema:** O desafio envolvia o gerenciamento completo (CRUD) dos dados de uma tabela de funcionários e o estabelecimento de novos relacionamentos estruturais entre tabelas.
 
-ID da Turma: Uma lista de chaves estrangeiras que fazem referência as turmas existentes.
-ID dos Alunos: Uma lista de chaves estrangeiras que fazem referência aos alunos matriculados na turma.
-OBS.: Os dois campos juntos formam a chave primaria da tabela
+**- Hipótese testada:** Instruções de manipulação de dados (UPDATE, DELETE) e de definição de integridade referencial (FOREIGN KEY) seriam capazes de gerenciar o ciclo de vida dos registros e suas conexões.
 
-Tabela "Notas" guardará as notas dos alunos em diferentes disciplinas:
+**- Descoberta:** Foi possível atualizar os salários de todo o departamento de TI para 7500, remover do sistema funcionários com salários abaixo de 4000, e criar uma tabela de projetos estritamente vinculada aos funcionários através de chaves estrangeiras.
 
-ID da Nota: Um identificador único para cada nota.
-ID do Aluno: Uma chave estrangeira que faz referência ao aluno.
-ID da Disciplina: Uma chave estrangeira que faz referência à disciplina.
-Valor da Nota: A nota atribuída ao aluno na disciplina.
-Data da Avaliação: A data em que a avaliação foi realizada.
+**- Decisão a ser tomada:** Possibilita aos gestores realizar manutenções financeiras em massa (como reajustes salariais), limpar registros obsoletos da base e garantir que todo novo projeto tenha um gerente válido associado.
 
-**2 - Inserir dados**
+## mnm_a5_2 + arquivo-desafio | mão na massa 2 - aula 5
 
-Depois de criar as tabelas, é hora de inserir os dados.
-Para isso, você pode baixar aqui neste link (arquivo-desafio), todos os arquivos com os dados para popular todas as tabelas.
+**- Problema:** Era preciso modelar e popular um banco de dados relacional complexo para um sistema de gerenciamento escolar, além de realizar consultas condicionais nesses registros recém-criados.
 
-**3 - Realizar consultas simples**
+**- Hipótese testada:** A criação de múltiplas tabelas interligadas (como alunos, professores, disciplina, turmas e notas) utilizando restrições como CHECK e FOREIGN KEY garantiria a integridade do sistema para consultas acadêmicas.
 
-Com os dados inseridos nas tabelas, podemos realizar consultas simples para obter informações úteis, como:
+**- Descoberta:** Descobriu-se como estruturar os relacionamentos, aplicar restrições de validação de dados (como limitar o preenchimento do gênero apenas para 'Masculino' ou 'Feminino') e consultar alunos ordenados alfabeticamente ou disciplinas por faixa de notas específicas.
 
-Consulta 1: Executar consultas para verificar se os dados foram importados corretamente em todas as tabelas.
-Consulta 2: Retorne as informações de todos os alunos ordenados pelo nome.
-Consulta 3: Retornar a disciplina que possui a carga horaria maior que 40.
-Consulta 4: Buscar as notas que são maiores que 6 e menores que 8.
+**- Decisão a ser tomada:** Fornecer à administração da escola uma base robusta e confiável para matricular alunos, alocar professores, e gerar relatórios acadêmicos precisos baseados em cargas horárias e desempenho.

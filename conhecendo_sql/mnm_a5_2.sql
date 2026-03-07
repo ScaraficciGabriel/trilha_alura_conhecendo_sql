@@ -1,6 +1,6 @@
 #1. Criar tabelas 
   
-O primeiro passo é definir a estrutura do banco de dados, criando tabelas para armazenar informações específicas. Utilizaremos SQL (Structured Query Language) para criar as tabelas. Aqui estão os dados que você pode utilizar:
+#O primeiro passo é definir a estrutura do banco de dados, criando tabelas para armazenar informações específicas. Utilizaremos SQL (Structured Query Language) para criar as tabelas. Aqui estão os dados que você pode utilizar:
 
 #Tabela "Alunos" armazenará informações sobre os estudantes, como:
 
@@ -233,5 +233,6 @@ SELECT * FROM disciplina WHERE carga_horaria > 40;
 #Consulta 4: Buscar as notas que são maiores que 6 e menores que 8.
 
 SELECT * FROM notas WHERE valor_nota > 6 AND valor_nota < 8;
+
 
 

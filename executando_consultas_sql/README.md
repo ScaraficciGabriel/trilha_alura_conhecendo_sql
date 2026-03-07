@@ -26,7 +26,7 @@ Projeto cujo objetivo foi explorar de forma mais aprofundada as consultas por me
 
 ## p2_mnm_a5_2.sql + sqlite.db | Mão na massa: gerenciamento escolar com banco de dados relacional
 
-Desafio que propõe a realização de algumas consultas típicas que podem ser realizadas em um sistema de gerenciamento escolar.
+Desafio que propõe exercitar algumas consultas típicas que podem ser realizadas em um sistema de gerenciamento escolar.
 
 
 

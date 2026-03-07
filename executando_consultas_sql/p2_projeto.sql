@@ -95,7 +95,7 @@ GROUP BY parentesco;
 #16. Outra informação que a Fokus deseja que tragamos da base de dados é a quantidade de cursos por instituição. Ela deseja saber quais as instituições que têm mais cursos procurados por pessoas colaboradoras, porque ela tem interesse em saber um pouco mais dessas instituições, entrar em contato e ver se é possível fazer uma parceria para trazer descontos para as pessoas colaboradoras.
 
 SELECT instituicao, count(curso) FROM Treinamento
-GROUP by instituicao
+GROUP BY instituicao
 HAVING COUNT(curso) > 2;
 
 
@@ -151,5 +151,6 @@ FROM HistoricoEmprego;
 Portanto, ela gostaria de alterar o nome para CargosColaboradores, pois contém informações sobre cargos e salários, e ela acha que isso se encaixa melhor. Para isso, vamos usar a cláusula rename, que serve para renomear uma tabela, uma coluna específica, ou algo que gostaríamos de mudar o nome no nosso banco de dados.
 
 ALTER TABLE HistoricoEmprego RENAME TO CargosColaboradores; 
+
 
 
